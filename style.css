@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #f06, #48c6ef);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start ;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    padding: 0 10%;
+}
+
+strong {
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+#choice {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.choice {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    margin: 0 10%;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+button {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+    border: none;
+    padding: 15px 100px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #45a049, #357a38);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#computer, #user {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.credit {
+    color: #ffffff;
+    position: relative;
+    top: 10%;
+}
+
+@media (max-width: 600px) {
+    .choice {
+        margin: 5px;
+        width: 280px;
+        padding: 15px;
+    }
+    strong {
+        margin-bottom: 40px;
+        font-size: 20px;
+        color: white;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #computer, #user, #result {
+        font-size: 1rem;
+    }
+}
