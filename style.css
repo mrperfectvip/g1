@@ -94,6 +94,9 @@ button:active {
 }
 
 @media (max-width: 600px) {
+    body{
+     padding-top: 10%;
+    }
     .choice {
         margin: 5px;
         width: 280px;
