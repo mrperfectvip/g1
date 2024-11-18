@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all ease 2s;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 strong {
     position: absolute;
     top: 15px;
-    font-size: 20px;
+    font-size: 2rem;
     color: white;
 }
 
@@ -29,6 +30,7 @@ strong {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10%;
     justify-content: center;
     margin-top: 10vh;
 }
@@ -94,8 +96,11 @@ button:active {
 }
 
 @media (max-width: 600px) {
-    body{
-     padding-top: 10%;
+     *{
+    transition: all ease 2s;
+     }body{
+        padding: 0;
+     padding-top: 20%;
     }
     .choice {
         margin: 5px;
@@ -103,8 +108,8 @@ button:active {
         padding: 15px;
     }
     strong {
-        margin-bottom: 40px;
-        font-size: 20px;
+        margin-top: 3rem;
+        font-size: 1.5rem;
         color: white;
     }
     button {
